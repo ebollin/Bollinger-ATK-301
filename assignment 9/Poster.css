@@ -1,0 +1,64 @@
+header {font-family: Helvetica
+}
+
+h2 {margin-top: -19px;
+font-size: 32px}
+
+h3 {padding-top: -10px;
+border-bottom: solid black 1px;
+padding-bottom: 2px;
+width: 338px;
+font-family: Helvetica;
+font-size: 24px}
+
+div{font-family: Helvetica;
+font-weight: bolder}
+
+body{height: 765px;
+background-image: url(paper.png);
+background-color: black;
+background-size: 960px
+position: center;
+border-top: 10px solid #759497;
+border-bottom: 10px solid #759497;
+
+}
+
+html {background-color: black;
+/*  padding-left: 420px;
+  padding-right: 300px; */
+position: fixed;
+}
+
+footer {font-family: Helvetica; font-weight: bold
+}
+
+a {color: #759497;
+text-decoration: none}
+
+/*classes */
+.bigblue {color: #759497;
+font-family: Helvetica;
+margin-top: -32px;
+font-size: 28px}
+
+.bigblue2 {color: #759497;
+border-bottom: solid #759497 1px;
+width: 105px;
+font-family: Helvetica;
+margin-bottom: 32px;
+margin-top: -12px;
+font-size: 20px}
+
+.middle {font-size: 66px;
+margin-bottom: -10px;
+margin-top: -17px;
+font-weight: bolder;}
+
+.footer {margin-bottom: 4px;
+margin-top: 5px;
+font-size: 22px;
+}
+
+.footer2 {font-size: 22px;
+  margin-top: -5px;}
