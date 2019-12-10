@@ -1,0 +1,51 @@
+nav li {
+
+   padding: 10px;
+   margin: 10px;
+   width: 150px;
+
+   color: white;
+   opacity: 0.8;
+   display: inline;
+   text-decoration: none;
+   font-family: 'Fauna One', serif;
+   	font-size: 20px;
+    margin-bottom: 20px;
+}
+
+nav li a {
+   color: white;
+    text-decoration: none;
+    font-family: 'Fauna One', serif;
+    margin-bottom: 20px;
+}
+nav {border: hidden; padding: 5px;
+ text-decoration: none;
+font-family: 'Fauna One', serif;
+background-color: black;
+margin-bottom: 20px;}
+body {
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+label {
+    color: #333;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+}

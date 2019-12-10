@@ -1,59 +1,110 @@
-<!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Arts Technology Designs</title>
+    <title>Contact Form Tutorial by Bootstrapious.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='custom.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xl-8 offset-xl-2 py-5">
+
+                <h1>Contact form Tutorial from
+                    <a href="http://bootstrapious.com">Bootstrapious.com</a>
+                </h1>
+
+                <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>
 
 
-<div>
-  <link href="Ballegro_app.css" rel="stylesheet" type="text/css" />
-<h1><center><span class="header" >Web Designer for Ballegro App</span> </center></h1>
-<h2><center> Home Page </center></h2>
+                <form id="contact-form" method="post" action="contact.php" role="form">
 
+                    <div class="messages"></div>
 
+                    <div class="controls">
 
-<nav>
-   <!-- navigation -->
-<center>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Please specify your need *</label>
+                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                        <option value=""></option>
+                                        <option value="Request quotation">Request quotation</option>
+                                        <option value="Request order status">Request order status</option>
+                                        <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted">
+                                    <strong>*</strong> These fields are required. Contact form template by
+                                    <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
+                            </div>
+                        </div>
+                    </div>
 
-<ul id="menu">
-  <li id="hover"><a href="index.html">Home</a></li>
-  <li id="hover"><a href="page1.html">How to Create a Design</a></li>
-  <li id="hover"><a href="page2.html">How To Promote an App</a></li>
-  <li id="hover"><a href= "https://isumusic.blogspot.com/" target="_blank">Previous Designs Blog</a> </a>
-</ul>
-</center>
-</nav>
+                </form>
 
-<main>
-<p> <center><img id="newimage" src= https://images.unsplash.com/photo-1518834107812-67b0b7c58434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=60 >
-</center> </p>
+            </div>
+            <!-- /.8 -->
 
+        </div>
+        <!-- /.row-->
 
-<p>Welcome to the Ballegro App Design team at Illinois State University! We hope you can find the information that you want here!</p>
-<p>For more information, please contact Kristin Carlson at <a href="mailto:kacarl1@ilstu.edu">kacarl1@ilstu.edu</a>.</p>
+    </div>
+    <!-- /.container-->
 
-<p> <h4><span class="subheader">WHAT </span> </h4> </p>
-
-<p><span class="text"> VIRTUAL DANCE ACCOMPANIST (working title) </span> is expected to be a game-changing Online Interactive Dance Music Library/Player/App that can move the needles for the dance educators for their dance class teaching. </p>
-
-<p> An acclaimed collaborative pianist with nearly 2 decades of experience working with dancers and dance teachers, Yawen is the producer of this project and is looking for a technical collaborator who can help build the web portion of the library: mobile site, (app), website, and certain plugins.  The music content will include primarily Yawen’s recorded tracks as well as submissions from other pianist.
-</p>
-
-<p> <h4> <span class="subheader">WHY</span> </h4> </p>
-
-<p> <span class="division">After having been working in the dance industry for nearly two decades and conversing with the dance teachers,<span class="text">  I see that Music is an essential part of dancer’s training.</span>  Simply put, good and appropriate music selection and performance is like the best dance partner - it helps the students dance better and make progress faster.  Yet not all the studios have the budget to use live pianist which is always preferred over recorded music by the teachers and the students (well, although not all the live pianist can provide satisfying music selection and performance!).</p> </span>
-<p> Live music brings into the classroom a physical energy that is irreplaceable by the recorded music, a good dance musician is like a fast-reacting and self-updated playlist, and… AND, he/she is able to play the music at the tempo that is most conducive for the training process.  While most dance studios struggle to find the budget to hire live pianists/musicians (and by the way, the industry’s low pay rate for a dance accompanist is ridiculously embarrassing.  It is a very specialized skill yet it pays almost nothing),  they have to use CDs and recordings as a replacement.  For as long as I have worked in the industry, I have heard constant whining from the teachers about how the inflexible tempo have been driving them crazy.  Some studios have the “ Karaoke Player” connected to their CD Player that can do some tempo/pitch shifting, and there are a few apps and plugins already existing in the marketplace that provide the tempo modification feature.  However, accordingly to my research, these apps require many steps thus a lengthy process to get the desired result.  For example, the user first has to import their own playlist(s) into the app before anything can happen.  The playlists don’t update themselves.  So for the teacher, it can be a frustrating process to always have to hunt for the music, build their own playlists, and import them into the app. </p>
-
-<p> People are eager and impatient for a solution: an integrated place where they can find all the best and suitable music in seconds, then modify the tempo on the fly! </p>
-
-<p> I’m aspired and inspired to build such a new invention that can change the game for the dance education.
-</p>
-</main>
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
 </body>
+
 </html>
